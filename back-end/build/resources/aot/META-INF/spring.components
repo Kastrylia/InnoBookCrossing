@@ -1,0 +1,10 @@
+#
+#Sun Dec 12 18:17:44 MSK 2021
+com.example.innobookcrossing.controller.MainPageController=org.springframework.stereotype.Component
+com.example.innobookcrossing.model.User=javax.persistence.Entity,javax.persistence.Table
+com.example.innobookcrossing.jpa.UserRepository=org.springframework.data.repository.Repository
+com.example.innobookcrossing.model.Book=javax.persistence.Entity,javax.persistence.Table
+com.example.innobookcrossing.InnoBookCrossingApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+com.example.innobookcrossing.jpa.BookRepository=org.springframework.data.repository.Repository
+com.example.innobookcrossing.controller.AuthController=org.springframework.stereotype.Component
+com.example.innobookcrossing.controller.PersonalLibraryController=org.springframework.stereotype.Component
