@@ -19,14 +19,14 @@ public class MainPageController {
 
     @ApiOperation("Returns all Books. MAIN PAGE / LIBRARY")
     @GetMapping("book/get/all")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public List<Book> getBooks() {
         return bookRepository.findAll();
     }
 
     @ApiOperation("Get operation. Return book by specified ID. MAIN PAGE / LIBRARY")
     @GetMapping("book/get/{id}")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public Map<String, String> getBook(@PathVariable Integer id) {
         Book book = bookRepository.findBookById(id);
         HashMap<String, String> map = new HashMap<>();
@@ -42,7 +42,7 @@ public class MainPageController {
 
     @ApiOperation("Search for a book. MAIN PAGE / LIBRARY")
     @GetMapping("book/search")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public Book getBooks(@RequestParam
                          @Parameter(description = "Searching book by title") String search) {
         return bookRepository.findBookByTitle(search);

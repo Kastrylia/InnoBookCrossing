@@ -1,5 +1,5 @@
 #
-#Sun Dec 12 18:17:53 MSK 2021
+#Mon Dec 13 19:38:14 MSK 2021
 com.example.innobookcrossing.controller.MainPageController=org.springframework.stereotype.Component
 com.example.innobookcrossing.model.User=javax.persistence.Entity,javax.persistence.Table
 com.example.innobookcrossing.jpa.UserRepository=org.springframework.data.repository.Repository
